@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utopia.Core", "Utopia.Core\Utopia.Core.csproj", "{4D4155E3-942D-431D-94DB-31A2B767AAD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utopia.Shared", "Utopia.Shared\Utopia.Shared.csproj", "{20D4F13F-DD3F-4DD8-BF47-C9DD736A2AFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utopia.Core.Test", "Utopia.Core.Test\Utopia.Core.Test.csproj", "{EA67F189-4604-4FEF-BEBF-AA279D0D7C2B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utopia.BuildScript", "Utopia.BuildScript\Utopia.BuildScript.csproj", "{A35C9226-1996-4DF1-BF2A-9D8FC55C064E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决方案项", "{5FE7A6B1-FEBD-4C7D-B874-52CEA9E9519C}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		.editorconfig = .editorconfig
+		build.cmd = build.cmd
+		build.ps1 = build.ps1
+		build.sh = build.sh
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utopia.BuildUtility", "Utopia.BuildUtility\Utopia.BuildUtility.csproj", "{0BEFDE59-F3A0-4D28-9532-87515024F592}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mingmoe.Demystifier", "Mingmoe.Demystifier\src\Mingmoe.Demystifier\Mingmoe.Demystifier.csproj", "{55F0F7B4-B78D-4BA1-8D32-2717E122DCCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D4155E3-942D-431D-94DB-31A2B767AAD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D4155E3-942D-431D-94DB-31A2B767AAD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D4155E3-942D-431D-94DB-31A2B767AAD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D4155E3-942D-431D-94DB-31A2B767AAD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20D4F13F-DD3F-4DD8-BF47-C9DD736A2AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20D4F13F-DD3F-4DD8-BF47-C9DD736A2AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20D4F13F-DD3F-4DD8-BF47-C9DD736A2AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20D4F13F-DD3F-4DD8-BF47-C9DD736A2AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA67F189-4604-4FEF-BEBF-AA279D0D7C2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA67F189-4604-4FEF-BEBF-AA279D0D7C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA67F189-4604-4FEF-BEBF-AA279D0D7C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA67F189-4604-4FEF-BEBF-AA279D0D7C2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A35C9226-1996-4DF1-BF2A-9D8FC55C064E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A35C9226-1996-4DF1-BF2A-9D8FC55C064E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A35C9226-1996-4DF1-BF2A-9D8FC55C064E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BEFDE59-F3A0-4D28-9532-87515024F592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BEFDE59-F3A0-4D28-9532-87515024F592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BEFDE59-F3A0-4D28-9532-87515024F592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BEFDE59-F3A0-4D28-9532-87515024F592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55F0F7B4-B78D-4BA1-8D32-2717E122DCCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55F0F7B4-B78D-4BA1-8D32-2717E122DCCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55F0F7B4-B78D-4BA1-8D32-2717E122DCCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55F0F7B4-B78D-4BA1-8D32-2717E122DCCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

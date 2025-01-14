@@ -1,0 +1,36 @@
+﻿using System.Diagnostics;
+using Microsoft.Extensions.FileProviders;
+using Microsoft.Extensions.Hosting;
+
+namespace Utopia.Core;
+
+public class ExtendedHostEnvironment : IHostEnvironment
+{
+    public ExtendedHostEnvironment(string applicationName, string contentRootPath,string? environmentName = null)
+    {
+        if (environmentName is null)
+        {
+#if DEBUG
+            EnvironmentName = "Development";
+#else
+            EnvironmentName = "Production";
+#endif
+        }
+        else
+        {   
+            EnvironmentName = environmentName;
+        }
+        ApplicationName = applicationName;
+        ContentRootPath = contentRootPath;
+        ContentRootFileProvider = new PhysicalFileProvider(contentRootPath);
+    }
+    
+    public string EnvironmentName { get; set; }
+    
+    public string ApplicationName { get; set; }
+    
+    public string ContentRootPath { get; set; }
+    
+    public IFileProvider ContentRootFileProvider { get; set; }
+    
+}
