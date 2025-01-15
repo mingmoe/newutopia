@@ -11,9 +11,9 @@ public class ExtendedHostEnvironment : IHostEnvironment
         if (environmentName is null)
         {
 #if DEBUG
-            EnvironmentName = "Development";
+            EnvironmentName = Environments.Development;
 #else
-            EnvironmentName = "Production";
+            EnvironmentName = Environments.Production;
 #endif
         }
         else

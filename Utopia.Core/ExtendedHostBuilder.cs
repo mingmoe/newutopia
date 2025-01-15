@@ -75,6 +75,14 @@ public abstract class ExtendedHostBuilder : IHostBuilder
         throw new NotSupportedException();
     }
 
+    public void RegisterHost<T>() where T : ExtendedHost
+    {
+        ConfigureContainerDelegates.Add((_, builder) =>
+        {
+            builder.RegisterType<T>().As<IHost>().As<IHostApplicationLifetime>().SingleInstance();
+        });
+    }
+
     public IHostBuilder ConfigureContainer<TContainerBuilder>(
         Action<HostBuilderContext, TContainerBuilder> configureDelegate)
     {
@@ -84,7 +92,6 @@ public abstract class ExtendedHostBuilder : IHostBuilder
         }
         else
         {
-            
             // should not call this
             // we use Autofac
             throw new NotSupportedException();
